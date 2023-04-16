@@ -17,10 +17,10 @@ or we can use postman to trigger the api requests.
 
 API list:
 
-GET /api/v1/tasks - Lists all tasks
-GET /api/v1/tasks/:id - Gets task with particular id
-POST /api/v1/task - Create a new task
-PATCH /api/v1/task/:id - Updates a task with a particular id
-DELETE /api/v1/task/:id - Delets a task with the particular id
+1. GET /api/v1/tasks - Lists all tasks
+2. GET /api/v1/tasks/:id - Gets task with particular id
+3. POST /api/v1/task - Create a new task
+4. PATCH /api/v1/task/:id - Updates a task with a particular id
+5. DELETE /api/v1/task/:id - Delets a task with the particular id
 
 
