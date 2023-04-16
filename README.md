@@ -4,8 +4,8 @@ create a .env file and add the following entries
 1. PORT
 2. DB_URL
 
-PORT is for assigning the port for the api to run. By default if no value is provided the app runs on port 3000
-DB_URL is the mongodb connection string
+PORT is for assigning the port for the api to run. By default if no value is provided the app runs on port 3000.
+DB_URL is the mongodb connection string.
 
 cd into the root directory
 run "npm install"
