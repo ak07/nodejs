@@ -1,8 +1,7 @@
 const Task = require("../Models/TaskModel");
 
 
-const getUser = async (req, res, next, id) => {
-    console.log("printing from middleware "+ id);
+const getTask = async (req, res, next, id) => {
     try{
         let task = await Task.find({_id:id});
         if(task == null || task.length == 0){
@@ -11,10 +10,12 @@ const getUser = async (req, res, next, id) => {
         req.task = task[0];
         next()
     }catch(err){
+        console.log("Printing errror from middleware");
+        console.log(err)
         next(err);
     }
 }
 
 module.exports = {
-    getUser
+    getTask
 }

@@ -3,6 +3,7 @@ const app = express();
 const connectDB = require("./DB/DBConnect");
 const taskRouter = require("./Routes/TaskRoutes");
 const pageNotFoundError = require("./Errors/PageNotFoundError");
+const AsyncErrorHandler = require("./Errors/AsyncErrorHandler");
 require("dotenv").config();
 
 const PORT = process.env.PORT || 3000;
@@ -10,8 +11,8 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json())
 
 app.use("/api/v1/tasks", taskRouter);
-
 app.use(pageNotFoundError);
+app.use(AsyncErrorHandler);
 
 
 const initializeDBandServer = async () => {
