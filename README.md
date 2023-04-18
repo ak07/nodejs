@@ -1,5 +1,9 @@
 Instructions for running locally
 
+Clone the development branch
+
+cd into the root directory
+
 create a .env file and add the following entries
 1. PORT
 2. DB_URL
@@ -7,7 +11,6 @@ create a .env file and add the following entries
 PORT is for assigning the port for the api to run. By default if no value is provided the app runs on port 3000.
 DB_URL is the mongodb connection string.
 
-cd into the root directory
 run "npm install"
 
 run "npm run dev" to start the server
@@ -17,10 +20,10 @@ or we can use postman to trigger the api requests.
 
 API list:
 
-1. GET /api/v1/tasks - Lists all tasks
-2. GET /api/v1/tasks/:id - Gets task with particular id
-3. POST /api/v1/task - Create a new task
-4. PATCH /api/v1/task/:id - Updates a task with a particular id
-5. DELETE /api/v1/task/:id - Delets a task with the particular id
+GET /api/v1/tasks - Lists all tasks
+GET /api/v1/tasks/:id - Gets task with particular id
+POST /api/v1/task - Create a new task
+PATCH /api/v1/task/:id - Updates a task with a particular id
+DELETE /api/v1/task/:id - Delets a task with the particular id
 
 
