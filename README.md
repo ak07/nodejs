@@ -1,5 +1,9 @@
 Instructions for running locally
 
+Clone the development branch
+
+cd into the root directory
+
 create a .env file and add the following entries
 1. PORT
 2. DB_URL
@@ -7,7 +11,6 @@ create a .env file and add the following entries
 PORT is for assigning the port for the api to run. By default if no value is provided the app runs on port 3000.
 DB_URL is the mongodb connection string.
 
-cd into the root directory
 run "npm install"
 
 run "npm run dev" to start the server
